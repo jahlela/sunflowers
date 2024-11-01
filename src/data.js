@@ -7,9 +7,9 @@ const data = [
         "Here is the map. Where do you wish to go?"`, //text to display
         choice: [
             //choices
-            { id: 0, text: "Option A", goTo: 1 },
-            { id: 1, text: "Option B", goTo: 2 },
-            { id: 2, text: "Option C", goTo: 3 },
+            { id: 0, text: "Open Door 1", goTo: 1 },
+            { id: 1, text: "Open Door 2", goTo: 2 },
+            { id: 2, text: "Open Door 3", goTo: 3 },
         ],
     },
     {

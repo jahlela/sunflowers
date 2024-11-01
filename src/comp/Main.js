@@ -19,7 +19,7 @@ const Main = ({ score, currentId, choiceClicked }) => {
             className="main">
               {/* main text of current node */}
               {/* image of current node. image must have name of current id */}
-              <img className="mainImg" src={require(`../img/${currentId}.png`)} alt="" loading="lazy"/>
+              <img className="mainImg" src={require(`../img/${currentId}.jpg`)} alt="" loading="lazy"/>
               <h2 className="mainTitle">{title}</h2>
               <div className="mainText">{text}</div>
               <div className="mainChoices">
