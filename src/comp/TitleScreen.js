@@ -1,6 +1,6 @@
 import React from 'react'
-import Choice from './Choice'
 import titlescreen from '../img/titlescreen.gif'
+import Choice from './Choice'
 
 //title screen component
 const TitleScreen = ({gameStart, gameLoad, data}) => {

@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
+import React from 'react'
 import data from '../data.js'
 import Choice from './Choice.js'
-import { AnimatePresence, motion } from 'framer-motion'
 
 const Main = ({score, currentId, choiceClicked}) => {
   return (
