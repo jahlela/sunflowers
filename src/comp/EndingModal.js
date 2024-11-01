@@ -24,7 +24,7 @@ function EndingModal({ handleClose, endings, endingTotal }) {
         <div className="modalBg" onClick={handleClose}>
             <div className="modalContainer">
                 <div className="modalContent">
-                    <h1>Endings Reached</h1>
+                    <h1>Roles unlocked</h1>
                     <h2>
                         {endings.length} / {endingTotal}
                     </h2>
