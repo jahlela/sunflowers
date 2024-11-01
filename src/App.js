@@ -1,12 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.scss";
+import EndingModal from "./comp/EndingModal";
+import Footer from "./comp/Footer";
 import Header from "./comp/Header";
 import Main from "./comp/Main";
 import TitleScreen from "./comp/TitleScreen";
-import Footer from "./comp/Footer";
 import data from "./data";
-import EndingModal from "./comp/EndingModal";
-import { useEffect } from "react";
 
 function App() {
     //state
@@ -17,7 +16,7 @@ function App() {
 
     const [endingModal, setEndingModal] = useState(false);
 
-    const endingTotal = 4; //total number of endings
+    const endingTotal = 5; //total number of endings
 
     //loading data
 
@@ -105,7 +104,7 @@ function App() {
 
     return (
         <div className="App">
-            <Header>Buyer Beware You Choose The Scare</Header>
+            <Header>Sunflowers present: ProfessionFinder4UBS</Header>
             {inGame ? <Main score={score} currentId={currentId} choiceClicked={choiceClicked} /> : <TitleScreen gameStart={() => gameStartLoad(0)} gameLoad={() => gameStartLoad(1)} data={data} />}
             {/* only render main game if game has been started, otherwise render title screen*/}
             {endingModal && <EndingModal handleClose={() => setEndingModal(false)} endingTotal={endingTotal} endings={endings} />}

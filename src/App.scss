@@ -1,5 +1,5 @@
 $color1: rgb(52, 50, 119);
-$color2: rgb(81, 155, 81);
+$color2: white;
 $color3: rgb(255, 255, 255);
 $color4: rgb(55, 50, 119);
 
@@ -20,15 +20,11 @@ $header-footer-color: $color4;
     }
 }
 
-@include font("CherryBomb-Regular", "./fnt/CherryBomb-Regular");
-@include font("JollyLodger-Regular", "./fnt/JollyLodger-Regular");
-
 //google font imports
-@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
 
-$header-font: JollyLodger-Regular, Arial, Helvetica, sans-serif;
-$body-font: "Acme", cursive;
+$header-font: "Libre Franklin", Arial, Helvetica, sans-serif;
+$body-font: "Quicksand", Helvetica, sans-serif;
 
 html {
     background-color: $bg-color;

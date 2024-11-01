@@ -1,7 +1,7 @@
 const data = [
     {
         id: 0,
-        title: "The Bad Beginning",
+        title: "Are you still dreaming?",
         text: `
         An old man stands before you and unfolds a map.
         "Here is the map. Where do you wish to go?"`, //text to display
@@ -19,6 +19,7 @@ const data = [
         choice: [
             { id: 0, text: "Eat The Peach", goTo: 4 },
             { id: 1, text: "Leave The Peach Be", goTo: 5 },
+            { id: 2, text: "Long live the Peach!", goTo: 6 },
         ],
     },
     {
@@ -43,6 +44,12 @@ const data = [
         id: 5,
         title: "New York Silly",
         text: "You enjoy a nice night on the town in New York.",
+        choice: [],
+    },
+    {
+        id: 6,
+        title: "New York So Tasty",
+        text: "Peach! Peach! Peach!",
         choice: [],
     },
 ];
