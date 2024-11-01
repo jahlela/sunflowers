@@ -1,11 +1,33 @@
-$color1: rgb(52, 50, 119);
-$color2: white;
+$white: white;
+$color1: rgb(65, 121, 167);
+$color2: rgb(65, 121, 167);
 $color3: rgb(255, 255, 255);
-$color4: rgb(55, 50, 119);
+$color4: rgb(65, 121, 167);
 
-$bg-color: $color1;
-$title-text-color: $color2;
-$body-text-color: $color2;
+// fluffy cloud theme
+$cloud-white: #F9F9FB;
+$soft-sky-blue: #E0F7FA;
+$gentle-pink: #FDE2E4;
+$light-lavender: #E8EAF6;
+$pale-mint: #E0F2F1;
+
+$cotton-candy-pink: #FFC1E3;
+$sky-blue: #A5D8FF;
+$soft-sunshine: #FFF3C4;
+$lavender-blush: #E6E6FA;
+$misty-mint: #D1F2EB;
+
+$dreamy-gray: #858585;
+$cloud-gray: #A7A7A7;
+$light-charcoal: #636363;
+
+$text-primary: #2C3E50;        // Dark navy-gray for main text, providing strong contrast
+$text-secondary: #34495E;      // Slightly lighter navy for secondary text
+//
+
+$bg-color: $soft-sky-blue;
+$title-text-color: $text-secondary; // $white;
+$body-text-color: $text-primary; // $light-charcoal; // $white;
 $header-footer-color: $color4;
 
 //fonts
@@ -149,6 +171,10 @@ body {
 
     &:hover {
         cursor: pointer;
+        scale: 1.2;
+        transition: { duration: 0.2 };
+        background-color: $cotton-candy-pink;
+
     }
 }
 
