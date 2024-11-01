@@ -1,0 +1,212 @@
+$color1: rgb(52, 50, 119);
+$color2: rgb(81, 155, 81);
+$color3: rgb(255, 255, 255);
+$color4: rgb(94, 50, 119);
+
+$bg-color: $color1;
+$title-text-color: $color2;
+$body-text-color: $color2;
+$header-footer-color: $color4;
+
+//fonts
+@mixin font($font-family, $font-file) {
+    @font-face {
+        font-family: $font-family;
+        src: url($font-file + ".eot");
+        src: url($font-file + ".eot?#iefix") format("embedded-opentype"), url($font-file + ".woff") format("woff"), url($font-file + ".ttf") format("truetype"),
+            url($font-file + ".svg#" + $font-family) format("svg");
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+@include font("CherryBomb-Regular", "./fnt/CherryBomb-Regular");
+@include font("JollyLodger-Regular", "./fnt/JollyLodger-Regular");
+
+//google font imports
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+
+$header-font: JollyLodger-Regular, Arial, Helvetica, sans-serif;
+$body-font: "Acme", cursive;
+
+html {
+    background-color: $bg-color;
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0px;
+}
+
+.App {
+    text-align: center;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    color: $title-text-color;
+    font-family: $header-font;
+    background-color: $header-footer-color;
+
+    h1 {
+        margin: 0px;
+        padding: 10px;
+    }
+
+    position: sticky;
+    top: 0;
+
+    margin-bottom: 10px;
+}
+
+.clear {
+    clear: both;
+    height: 100px;
+}
+
+.footerContainer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $header-footer-color;
+    border-top: 100px;
+}
+
+.footer {
+    h2 {
+        float: left;
+        margin: 15px 0px 10px 20%;
+    }
+
+    button {
+        float: right;
+        margin: 10px 20% 10px 0px;
+    }
+
+    color: $title-text-color;
+    font-family: $body-font;
+}
+
+.endingsBtn {
+    padding: 5px 10px;
+    margin: 15px;
+    border: 3px solid $body-text-color;
+    border-radius: 12px;
+
+    background-color: $header-footer-color;
+    color: $body-text-color;
+    font-family: $body-font;
+    font-size: 20px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+// main
+.main, .titleScreen {
+    max-width: 550px;
+    margin: auto;
+}
+
+.mainTitle {
+    margin: 10px;
+    color: $title-text-color;
+    font-family: $header-font;
+    font-size: 40px;
+}
+
+.mainText {
+    color: $body-text-color;
+    font-family: $body-font;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.mainImg {
+    width: 500px;
+    max-width: 90%;
+    border-radius: 5%;
+    border: 5px solid $body-text-color;
+}
+
+.titleImg {
+    width: 500px;
+    max-width: 90%;
+}
+
+.choiceButton {
+    padding: 5px 10px;
+    margin: 5px 0px;
+    border: 3px solid $body-text-color;
+    border-radius: 12px;
+
+    background-color: $bg-color;
+    color: $body-text-color;
+    font-family: $body-font;
+    font-size: 20px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.stats {
+    font-family: $body-font;
+    color: $body-text-color;
+}
+
+//killscreen
+.killScreenChoices {
+    color: $body-text-color;
+
+    h2,
+    h3 {
+        font-family: $header-font;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+}
+
+//modal
+.modalBg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer {
+    width: 500px;
+    max-width: 80%;
+    height: 500px;
+    max-height: 70%;
+    border-radius: 12px;
+    background-color: $header-footer-color;
+    color: $title-text-color;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+
+    h1 {
+        font-family: $header-font;
+    }
+
+    font-family: $body-font;
+}
+
+.modalFooter {
+    margin-top: auto;
+}
