@@ -33,10 +33,7 @@ const Main = ({score, currentId, choiceClicked}) => {
                       <div className="killScreenChoices">
                           <h2>The End</h2>
                           <h3>Final Score: {score}</h3>
-                          <h4>First winner</h4>
-                          <h5>Second winner</h5>
                            <Choice handleClick={() => choiceClicked(0, 0)} text="Try Again" />
-                           <Choice handleClick={() => choiceClicked(1, 1)} text="Exit" />
                       </div>
                   )}
               </div>
