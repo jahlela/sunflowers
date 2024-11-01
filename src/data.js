@@ -19,7 +19,7 @@ const data = [
         choice: [
             { id: 0, text: "Eat The Peach", goTo: 4 },
             { id: 1, text: "Leave The Peach Be", goTo: 5 },
-            { id: 2, text: "Long live the Peach!", goTo: 6 },
+            { id: 2, text: "Long love the Peach!", goTo: 6 },
         ],
     },
     {
