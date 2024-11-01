@@ -10,7 +10,7 @@ const Main = ({score, currentId, choiceClicked}) => {
             key={currentId} 
             initial={{ opacity: 0 }} 
             animate={{ opacity: 1}}
-            transition={{duration: 0.2}}
+            transition={{duration: 1.2}}
             exit={{opacity: 0}}
             
             className="main">
