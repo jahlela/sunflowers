@@ -22,6 +22,9 @@ const Main = ({ score, currentId, choiceClicked }) => {
               <img className="mainImg" src={require(`../img/${currentId}.jpg`)} alt="" loading="lazy"/>
               <h2 className="mainTitle">{title}</h2>
               <div className="mainText">{text}</div>
+              <div class="cloudButton" role="button" onclick="yourFunction()">
+                  <div className='mainText cloudButtonText'>Learn More</div>
+              </div>
               <div className="mainChoices">
                   {choice.length ? ( //if choice array isnt empty list choices
                       choice.map((choice) => {

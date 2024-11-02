@@ -1,0 +1,42 @@
+.cloudButton {
+    /* Set background image */
+    background-image: url('img/cloud-button.png'); /* Replace with the actual path */
+    background-size: contain; /* Scales image to fit the button */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: none !important;
+    
+    /* Remove default button styles */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+    /* Set button size to match the cloud image */
+    width: 250px; /* Adjust width and height as needed */
+    height: 150px;
+    
+    /* Center text on the cloud */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2C3E50; /* Adjust text color to fit your design */
+    font-size: 18px;
+    font-weight: bold;
+
+    /* Center cloud */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Optional: Hover effect */
+    transition: transform 0.2s ease;
+  }
+    
+  .cloudButton:hover {
+    transform: scale(1.25); /* Slight zoom on hover */
+  }
+  
+  .cloudButtonText {
+    position: relative;
+    top: -5px;
+    font-size: 17px !important;
+  } 
