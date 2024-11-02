@@ -18,6 +18,10 @@
   max-width: 500px;
   width: 80%;
   position: relative;
+
+  ul {
+    text-align: left;
+  }
 }
 
 .close {
@@ -29,7 +33,9 @@
 }
 
 .modalImage {
-  width: 100%;
+  width: 40%;
   height: auto;
   margin-bottom: 15px;
+  display: flex;
+  align-self: center;
 }
