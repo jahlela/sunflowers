@@ -2,6 +2,7 @@
 @import './CloudButton';
 @import './Modal';
 
+
 $white: white;
 $color1: rgb(65, 121, 167);
 $color2: rgb(65, 121, 167);
@@ -149,7 +150,7 @@ body {
     font-size: 20px;
     padding: 15px;
     white-space: pre-line;
-    line-height: .9;
+    line-height: 1.2;
 }
 
 .mainImg {
@@ -247,4 +248,17 @@ body {
 
 .modalFooter {
     margin-top: auto;
+}
+
+// TitleScreen
+.titleScreen {
+    img {
+        width: 60%;
+        margin-top: -600px;
+    }
+
+    h3 {
+        padding: 0 auto;
+        margin: 0 auto;
+    }
 }
