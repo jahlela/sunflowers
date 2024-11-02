@@ -1,20 +1,25 @@
 const data = [
     {
         id: 0,
-        title: "Are you still dreaming?",
-        text: `
-        A friendly woman stands before you and smiles. \n
-        "Do you love numbers?"`, //text to display
+        title: "Banking Internship",
+        text: `A friendly woman stands before you and smiles.\n"Do you love numbers?"`,
         choice: [
-            //choices
             { id: 0, text: "That’s me! ✨", goTo: 1 },
             { id: 1, text: "Ugh, no thanks 😅", goTo: 2 },
         ],
+        modalContent: {
+            description: "I’m Sara, a Senior Data Analyst at UBS.",
+            statements: [
+                "I enjoy working with numbers and data.",
+                "I love finding patterns and insights in information.",
+                "I’m interested in finance and data-driven decisions."
+            ],
+        },
     },
     {
         id: 1,
         title: "That's The Life For Me!",
-        text: "You've selected Option A. There is a giant peach stuck through the empire state building.",
+        text: "Hey, I'm Shari, a Platform Developer.",
         choice: [
             { id: 0, text: "Eat The Peach", goTo: 4 },
             { id: 1, text: "Leave The Peach Be", goTo: 5 },
@@ -22,9 +27,22 @@ const data = [
     },
     {
         id: 2,
-        title: "Option B Translation",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nibh sem, varius id euismod eget, imperdiet in orci. Quisque auctor nisl ut euismod dapibus. Quisque scelerisque nibh eget est eleifend, a lacinia lorem convallis. Nam pulvinar dui vulputate orci iaculis, vitae consequat ex pellentesque. Morbi condimentum nibh turpis, eget tempor magna sagittis eu. Sed dui quam, dapibus non diam in, imperdiet aliquet lacus. Vestibulum posuere eget elit vitae ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer volutpat sagittis velit, eu venenatis tortor ullamcorper vitae. Morbi finibus ligula urna, ornare vehicula lorem interdum nec. Nunc euismod placerat nibh, quis pretium ante aliquam in. Quisque eu imperdiet erat, quis tincidunt leo. Duis risus urna, venenatis non pharetra nec, venenatis id ligula. Etiam at malesuada ante.",
-        choice: [],
+        title: "IT Application Internship",
+        text: `Are you excited to learn from the pros and become a coding legend?`, //text to display
+        choice: [
+            //choices
+            { id: 0, text: "That’s me! ✨", goTo: 5 },
+            { id: 1, text: "Ugh, no thanks 😅", goTo: 6 },
+        ],
+        modalContent: {
+            // Image will be at `img/employee${currentId}.jpg
+            description: "I’m Beatrice, a Senior Application Developer at UBS. I help build the UBS website. Do any of the following sound like you?",
+            statements: [
+                "I enjoy working with numbers and data.",
+                "I love finding patterns and insights in information.",
+                "I’m interested in finance and data-driven decisions."
+            ],
+        },
     },
     {
         id: 3,
@@ -34,14 +52,14 @@ const data = [
     },
     {
         id: 4,
-        title: "Rest In Peaches",
-        text: "You got a stomachache and died.",
+        title: "Banking Internship",
+        text: "You are ready to apply!",
         choice: [],
     },
     {
         id: 5,
-        title: "New York Silly",
-        text: "You enjoy a nice night on the town in New York.",
+        title: "IT Application Internship",
+        text: "You are ready to apply!",
         choice: [],
     },
     {

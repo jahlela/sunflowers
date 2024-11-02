@@ -17,25 +17,6 @@ function App() {
 
     const endingTotal = 5; //total number of endings
 
-    //loading data
-
-    // useEffect(() => {
-    //     const loadId = JSON.parse(localStorage.getItem("currentId"));
-    //     if (loadId) {
-    //         setCurrentId(loadId);
-    //     }
-
-    //     const loadScore = JSON.parse(localStorage.getItem("score"));
-    //     if (loadScore) {
-    //         setScore(loadScore)
-    //     }
-
-    //     const loadEndings = JSON.parse(localStorage.getItem("endings"));
-    //     if (loadEndings) {
-    //         setEndings(loadEndings);
-    //     }
-    // }, [])
-
     //saving data
     useEffect(() => {
         if (inGame) {

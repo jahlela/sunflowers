@@ -8,7 +8,7 @@ const Footer = ({score,endings, handleClick, endingTotal}) => {
           <div className="footer">
               <h2>Score: {score}</h2>
               <motion.button className="endingsBtn" onClick={handleClick}>
-                  Roles unlocked: {endings} / {endingTotal}
+                  Learn more
               </motion.button>
           </div>
         </div>
