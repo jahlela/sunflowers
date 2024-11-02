@@ -1,19 +1,34 @@
-import { motion } from 'framer-motion';
-import React from 'react';
+import React, { useState } from 'react';
 
-const Footer = ({score,endings, handleClick, endingTotal}) => {
-  return (
-      <div className="clear">
+const Footer = ({ language, onLanguageChange }) => {
+    const [isMenuOpen, setMenuOpen] = useState(false);
+
+    const handleLanguageSelection = (newLanguage) => {
+        onLanguageChange(newLanguage);
+        setMenuOpen(false); // Close the menu after selection
+    };
+
+    return (
         <div className="footerContainer">
-          <div className="footer">
-              <h2>Score: {score}</h2>
-              <motion.button className="endingsBtn" onClick={handleClick}>
-                  Learn more
-              </motion.button>
-          </div>
-        </div>
-      </div>
-  );
-}
+            <div className="footer">
+                <button
+                    className="languageButton"
+                    onClick={() => setMenuOpen(!isMenuOpen)}
+                >
+                    {language} ▲
+                </button>
 
-export default Footer
+                {isMenuOpen && (
+                    <div className="dropUpMenu">
+                        <button onClick={() => handleLanguageSelection('DE')}>DE</button>
+                        <button onClick={() => handleLanguageSelection('FR')}>FR</button>
+                        <button onClick={() => handleLanguageSelection('IT')}>IT</button>
+                        <button onClick={() => handleLanguageSelection('EN')}>EN</button>
+                    </div>
+                )}
+            </div>
+        </div>
+    );
+};
+
+export default Footer;

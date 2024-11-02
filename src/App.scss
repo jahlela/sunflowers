@@ -91,29 +91,97 @@ body {
     height: 100px;
 }
 
+// .footerContainer {
+//     position: fixed;
+//     left: 0;
+//     bottom: 0;
+//     width: 100%;
+//     background-color: $header-footer-color;
+//     border-top: 100px;
+// }
+
+// .footer {
+//     h2 {
+//         float: left;
+//         margin: 15px 0px 10px 20%;
+//     }
+
+//     button {
+//         float: right;
+//         margin: 10px 20% 10px 0px;
+//     }
+
+//     color: $title-text-color;
+//     font-family: $body-font;
+// }
+
 .footerContainer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: $header-footer-color;
-    border-top: 100px;
+    padding: 10px 0;
 }
 
 .footer {
-    h2 {
-        float: left;
-        margin: 15px 0px 10px 20%;
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
+    padding-right: 20px;
+    position: relative;
+}
+
+.languageContainer {
+    position: relative;
+}
+
+.languageButton {
+    padding: 10px 20px;
+    background-color: $cotton-candy-pink;
+    color: $text-primary;
+    font-family: $body-font;
+    font-size: 16px;
+    border: 2px solid $text-primary;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px; /* Set a fixed width to ensure consistency with the menu */
+
+    &:hover {
+        background-color: $sky-blue;
     }
+}
+
+.dropUpMenu {
+    position: absolute;
+    bottom: 50px; /* Positions the menu above the button */
+    width: 100px; /* Matches the width of the languageButton */
+    background-color: $cloud-white;
+    border: 1px solid $dreamy-gray;
+    border-radius: 8px;
+    padding: 5px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
 
     button {
-        float: right;
-        margin: 10px 20% 10px 0px;
-    }
+        background: none;
+        border: none;
+        padding: 8px 0;
+        font-family: $body-font;
+        font-size: 14px;
+        color: $text-primary;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        width: 100%; /* Ensures each menu item is as wide as the menu */
 
-    color: $title-text-color;
-    font-family: $body-font;
+        &:hover {
+            background-color: $gentle-pink;
+        }
+    }
 }
+
+
 
 .endingsBtn {
     padding: 5px 10px;
