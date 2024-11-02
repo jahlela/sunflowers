@@ -103,7 +103,7 @@ function App() {
 
     return (
         <div className="App">
-            <div className="mainText">🌻 The Sunflowers present: ProfessionFinder4UBS</div>
+            {!inGame && <div className="mainText">🌻 The Sunflowers present: ProfessionFinder4UBS</div>}
             {inGame ? <Main score={score} currentId={currentId} choiceClicked={choiceClicked} /> : <TitleScreen gameStart={() => gameStartLoad(0)} gameLoad={() => gameStartLoad(1)} data={data} />}
             {/* only render main game if game has been started, otherwise render title screen*/}
             {endingModal && <EndingModal handleClose={() => setEndingModal(false)} endingTotal={endingTotal} endings={endings} />}

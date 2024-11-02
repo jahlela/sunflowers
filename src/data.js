@@ -3,13 +3,12 @@ const data = [
         id: 0,
         title: "Are you still dreaming?",
         text: `
-        An old man stands before you and unfolds a map.
-        "Here is the map. Where do you wish to go?"`, //text to display
+        A friendly woman stands before you and smiles. \n
+        "Do you love numbers?"`, //text to display
         choice: [
             //choices
-            { id: 0, text: "Open Door 1", goTo: 1 },
-            { id: 1, text: "Open Door 2", goTo: 2 },
-            { id: 2, text: "Open Door 3", goTo: 3 },
+            { id: 0, text: "That’s me! ✨", goTo: 1 },
+            { id: 1, text: "Ugh, no thanks 😅", goTo: 2 },
         ],
     },
     {
