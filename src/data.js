@@ -1,18 +1,18 @@
 const data = [
     {
         id: 0,
-        title: "Banking Internship",
-        text: `A friendly woman stands before you and smiles.\n"Do you love numbers?"`,
+        title: "A friendly woman appears",
+        text: `Are you a money expert helping people grow cash and own homes?`,
         choice: [
-            { id: 0, text: "That’s me! ✨", goTo: 1 },
+            { id: 0, text: "That’s me! ✨", goTo: 4 },
             { id: 1, text: "Ugh, no thanks 😅", goTo: 2 },
         ],
         modalContent: {
-            description: "I’m Sara, a Senior Data Analyst at UBS.",
+            description: "Hey, I’m Sara, a Senior Data Analyst at UBS.",
             statements: [
-                "I enjoy working with numbers and data.",
-                "I love finding patterns and insights in information.",
-                "I’m interested in finance and data-driven decisions."
+                "Are you a customer superhero, there to save the day for anyone who needs help?",
+                "Are you a problem-solver, always finding cool ways to help customers?",
+                "Then UBS is the place to be if you're into code, innovation, and digital transformation!"
             ],
         },
     },
@@ -36,11 +36,11 @@ const data = [
         ],
         modalContent: {
             // Image will be at `img/employee${currentId}.jpg
-            description: "I’m Beatrice, a Senior Application Developer at UBS. I help build the UBS website. Do any of the following sound like you?",
+            description: "I’m Beatrice, a Senior Application Developer at UBS. I help build the UBS website.",
             statements: [
-                "I enjoy working with numbers and data.",
-                "I love finding patterns and insights in information.",
-                "I’m interested in finance and data-driven decisions."
+                "Do you enjoy working with numbers and data?",
+                "Do you love finding patterns and insights in information?",
+                "Are you interested in finance and data-driven decisions?"
             ],
         },
     },
@@ -52,20 +52,20 @@ const data = [
     },
     {
         id: 4,
-        title: "Banking Internship",
-        text: "You are ready to apply!",
+        title: "You found your calling!",
+        text: "You would be perfect for the Banking internship at UBS",
         choice: [],
     },
     {
         id: 5,
-        title: "IT Application Internship",
-        text: "You are ready to apply!",
+        title: "You found your calling!",
+        text: "You would be perfect for the IT Application Developer internship at UBS",
         choice: [],
     },
     {
         id: 6,
-        title: "New York So Tasty",
-        text: "Peach! Peach! Peach!",
+        title: "You found your calling!",
+        text: "You would be perfect for the IT Platform Developer internship at UBS",
         choice: [],
     },
 ];

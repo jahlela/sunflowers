@@ -3,18 +3,21 @@ import React from "react";
 function EndingModal({ handleClose, currentSelection }) {
     const { id, modalContent } = currentSelection;
 
-    //const endingList = endings.map((ending, index) => <EndingList ending={ending} data={data} key={index} />);
     return (
         <div className="modalBg" onClick={handleClose}>
             <div className="modalContainer">
                 <div className="modalContent">
-                <img src={require(`../img/employee${id}.jpg`) || `../img/employee${id}.jpg`} alt="UBS team member" className="modalImage" />
-                <h2>{modalContent.description}</h2>
-                <ul>
-                    {modalContent.statements.map((statement, index) => (
-                        <li key={index}>{statement}</li>
-                    ))}
-                </ul>
+                    <img
+                        src={require(`../img/employee${id}.jpg`) || `../img/employee${id}.jpg`}
+                        alt="UBS team member"
+                        className="modalImage"
+                    />
+                    <h2>{modalContent.description}</h2>
+                    <ul>
+                        {modalContent.statements.map((statement, index) => (
+                            <li key={index}>{statement}</li>
+                        ))}
+                    </ul>
                 </div>
                 <div className="modalFooter">
                     <h2>Click anywhere to close</h2>

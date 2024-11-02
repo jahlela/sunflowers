@@ -6,7 +6,7 @@ import EndingModal from './EndingModal.js'
 
 const Main = ({ score, currentId, choiceClicked }) => {
     const currentSelection = data[currentId];
-    const { title, text, choice } = currentSelection;
+    const { title, text, choice, modalContent } = currentSelection;
     const [endingModal, setEndingModal] = useState(false);
 
 
@@ -25,9 +25,9 @@ const Main = ({ score, currentId, choiceClicked }) => {
               <img className="mainImg" src={require(`../img/${currentId}.jpg`)} alt="" loading="lazy"/>
               <h2 className="mainTitle">{title}</h2>
               <div className="mainText">{text}</div>
-              <div className="cloudButton" role="button" onClick={() => setEndingModal(true)}>
+              {!!modalContent && <div className="cloudButton" role="button" onClick={() => setEndingModal(true)}>
                   <div className='mainText cloudButtonText'>Learn More</div>
-              </div>
+              </div>}
               {endingModal && <EndingModal handleClose={() => setEndingModal(false)} currentSelection={currentSelection} />}
 
               <div className="mainChoices">
@@ -42,9 +42,7 @@ const Main = ({ score, currentId, choiceClicked }) => {
                   ) : (
                       //if it is empty, make it a killscreen
                       <div className="killScreenChoices">
-                          <h2>The End</h2>
-                          <h3>Final Score: {score}</h3>
-                           <Choice handleClick={() => choiceClicked(0, 0)} text="Try Again" />
+                           <Choice handleClick={() => choiceClicked(0, 0)} text="Start over" />
                       </div>
                   )}
               </div>

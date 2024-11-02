@@ -21,8 +21,8 @@ const Footer = ({ language, onLanguageChange }) => {
                 {isMenuOpen && (
                     <div className="dropUpMenu">
                         <button onClick={() => handleLanguageSelection('DE')}>DE</button>
-                        <button onClick={() => handleLanguageSelection('FR')}>FR</button>
-                        <button onClick={() => handleLanguageSelection('IT')}>IT</button>
+                        <button onClick={() => handleLanguageSelection('EN')}>FR</button>
+                        <button onClick={() => handleLanguageSelection('EN')}>IT</button>
                         <button onClick={() => handleLanguageSelection('EN')}>EN</button>
                     </div>
                 )}
